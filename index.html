@@ -13,50 +13,241 @@
         <!-- Bootstrap Icons -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
 
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+            rel="stylesheet" />
+
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+            rel="stylesheet" type="text/css" />
+
         <!-- Custom CSS -->
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
     </head>
 
-    <body class="d-flex flex-column h-100">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-dark">DEVCNX</span></a>
+    <body id="page-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top text-uppercase">
+            <div class="container text-black">
+                <a class="navbar-brand" href="#page-top">DEVCNX</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    <!-- Navigation Links -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <a href="/" class="nav-link text-uppercase">Home</a>
-                        <a href="/resume.html" class="nav-link text-uppercase">Resume</a>
-                        <a href="/projects.html" class="nav-link text-uppercase">Projects</a>
-                        <a href="/contact.html" class="nav-link text-uppercase">Contact</a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- Main Content -->
-        <div id="main-content">
 
+        <!-- Header -->
+        <header class="masthead">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Welcome Column -->
+                    <div class="col-md-8">
+                        <div class="text-center text-md-start">
+                            <h1 class="display-6 fs-3 m-0 p-0"><em>Hey! It's me...</em><br><span
+                                    class="text-dark text-uppercase text-justify display-2 fw-bold">Brittaney!</span>
+                            </h1>
+                            <div class="badge bg-dark text-white text-uppercase mt-1 mb-1 justify-content-center">
+                                Full Stack Developer &middot; Seasoned Project Manager &middot; Problem Solver
+                            </div>
+                            <p class="lead text-justify fs-6">
+                                I'm an accomplished Project Manager with over seven years of experience between project
+                                coordination, customer service, and technical support, currently transitioning into a
+                                Full Stack Developer role. I hold an Associate's of Applied Science in Computer
+                                Information Systems - Computer Programming and a Certificate of Achievement from
+                                the University of Arkansas. My technical skills span Python, Django, HTML/CSS,
+                                Bootstrap, and Vue.js, with hands-on experience in both front-end and back-end
+                                development. I'm proficient in Git and GitHub for version control, and my background
+                                includes a foundational understanding of database management using MySQL and SQLite.
+                                With a strong passion for technology and continuous learning, I am eager to leverage
+                                my project management skills and coding abilities to deliver custom solutions that
+                                drive business growth and improve user experiences.
+                            </p>
+                            <a href="#services">
+                                <img src="/assets/img/logo.png" alt="Logo" class="img-fluid mb-1">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Image Column -->
+                    <img src="/assets/img/profile.png" alt="Profile Picture"
+                        class="rounded-circle img-fluid mb-3 mb-lg-0" style=" height: 450px; width: 400px;">
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="content-section bg-light" id="services">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="text-dark text-uppercase text-center display-4 fw-bold">Services</h2>
+                    <hr class="star-dark mb-5">
+                    <div class="row">
+                        <!-- Scripting and Automation Service -->
+                        <div class="col-md-4 mb-5">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fas fa-robot fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">Scripting and Automation</h4>
+                            <p class="text-muted text-justify">
+                                Expertise in automation bridges Python scripting for web scraping and mundane tasks, and
+                                Google Apps Script for Google Workspace Automation. Utilizing tools like Selenium and
+                                PyAutoGUI to create robust solutions for web data extraction and streamlining repetitive
+                                tasks. Tailored automated processes with Google Workspace enhance productivity and
+                                operational efficiency.
+                            </p>
+                        </div>
+                        <!-- Data Entry Service -->
+                        <div class="col-md-4 mb-5">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fas fa-database fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">Data Entry</h4>
+                            <p class="text-muted text-justify">
+                                Offering expert data entry services focusing on accuracy and efficiency. Experienced in
+                                managing complex databases and analyzing large datasets, transforming raw data into
+                                meaningful information. Knowledge of various IT systems ensures reliable and
+                                high-quality data management.
+                            </p>
+                        </div>
+                        <!-- Project Management Services -->
+                        <div class="col-md-4 mb-5">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fas fa-tasks fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">Project Management</h4>
+                            <p class="text-muted text-justify">
+                                Experienced Project Manager with several years of experience. Proficient in managing
+                                projects from initiation to completion, ensuring timely delivery and within budget.
+                                Skilled in reviewing project requirements, identifying risks, and developing mitigation
+                                strategies. Strong communication skills and ability to lead cross-functional teams to
+                                achieve project goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="content-section bg-light portfolio-center">
+            <div class="container text-center portfolio-text">
+                <h2 class="text-dark text-uppercase">Portfolio</h2>
+                <hr class="star-dark">
+                <h3>Check Back Soon!</h3>
+                <p class="text-muted">
+                    This section is currently under construction. Please check back soon for updates on my latest
+                    projects.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Portfolio Item #1 -->
+        <!-- <div class="col-md-4 col-lg-4">
+                            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                                <div
+                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-dark">
+                                        <i class="fas fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="/assets/img/portfolio/cabin.png" alt="Cabin" />
+                            </a>
+                            <h3 class="text-center mt-3">Project Title</h3>
+                            <p class="text-muted text-justify p-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisl non nunc
+                                vestibulum
+                                aliquet. Nullam nec nisi ac nisi ultricies fermentum. Nullam nec nisi ac nisi
+                                ultricies
+                                fermentum.
+                            </p>
+                        </div> -->
+
+        <!-- Portfolio Item #2 -->
+        <!-- <div class="col-md-4 col-lg-4">
+                            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+                                <div
+                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-dark">
+                                        <i class="fas fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="/assets/img/portfolio/cabin.png" alt="Cabin" />
+                            </a>
+                            <h3 class="text-center mt-3">Project Title</h3>
+                            <p class="text-muted text-justify p-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisl non nunc
+                                vestibulum
+                                aliquet. Nullam nec nisi ac nisi ultricies fermentum. Nullam nec nisi ac nisi
+                                ultricies
+                                fermentum.
+                            </p>
+                        </div> -->
+
+        <!-- Portfolio Item #3 -->
+        <!-- <div class="col-md-4 col-lg-4">
+                            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+                                <div
+                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-dark">
+                                        <i class="fas fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="/assets/img/portfolio/cabin.png" alt="Cabin" />
+                            </a>
+                            <h3 class="text-center mt-3">Project Title</h3>
+                            <p class="text-muted text-justify p-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisl non nunc
+                                vestibulum
+                                aliquet. Nullam nec nisi ac nisi ultricies fermentum. Nullam nec nisi ac nisi
+                                ultricies
+                                fermentum.
+                            </p>
+                        </div> -->
 
         </div>
+        </div>
+        </div>
+        </section>
 
-        <footer id="footer" class="mt-auto px-5 d-flex flex-row justify-content-between align-items-center">
-            <p class="text-muted small fw-normal text-uppercase">
-                <script>
-                    const currentYear = new Date().getFullYear();
-                    document.write("© " + currentYear + " DEVCNX. All rights reserved.");
-                </script>
-            </p>
-            <p class="text-muted small fw-normal text-uppercase">Where Programming and Precision Meet.</p>
-        </footer>
+        <!-- Resume Section -->
+        <section class="content-section bg-light" id="resume">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="text-dark text-uppercase text-center display-4 fw-bold">Resume</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="content-section bg-light" id="contact">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="text-dark text-uppercase text-center display-4 fw-bold">Contact</h2>
+                </div>
+            </div>
+        </section>
 
         <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.7.1.js"
+        <script src=" https://code.jquery.com/jquery-3.7.1.js"
             integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
         <!-- Core Bootstrap JS -->
