@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* TODO: Clean up CSS File */
+
 :root {
     --bs-body-font-family: "Roboto", sans-serif;
 }
@@ -11394,6 +11396,7 @@ footer.footer .social-link:hover {
             -webkit-clip-path 0.25s ease-out;
         -webkit-clip-path: inset(-1px);
         clip-path: inset(-1px);
+        text-align: center;
     }
     .portfolio-item:hover img {
         -webkit-clip-path: inset(2rem);
